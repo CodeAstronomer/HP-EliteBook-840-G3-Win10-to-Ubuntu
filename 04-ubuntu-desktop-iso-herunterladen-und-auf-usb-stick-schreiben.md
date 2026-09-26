@@ -1,12 +1,14 @@
-# 4 · Ubuntu Server ISO herunterladen und auf USB-Stick schreiben
+# 4 · Ubuntu Desktop ISO herunterladen und auf USB-Stick schreiben
 
-**Ziel:** Die neueste **Ubuntu Server** Installationsdatei (**ISO**, für **amd64**) herunterladen und mit **balenaEtcher** auf den leeren Stick **„UBUNTU“** schreiben.
+**Ziel:** Die neueste **Ubuntu Desktop** Installationsdatei (**ISO**, für **amd64**) herunterladen und mit **balenaEtcher** auf den leeren Stick **„UBUNTU“** schreiben.
 
-⏱️ ca. 20–40 Minuten · 🌐 Internet nötig · 🟧 USB-Stick **„UBUNTU“** (mind. 8 GB)
+⏱️ ca. 30–60 Minuten · 🌐 Internet nötig · 🟧 USB-Stick **„UBUNTU“** (mind. 8 GB)
 
 > 🔴 **Alles auf dem Stick „UBUNTU“ wird gelöscht!** Stick **„DATEN“** vorher **abziehen**.
 
-Stand 26.09.2026: neueste Version = **Ubuntu 26.04.1 LTS**, Datei **ubuntu-26.04.1-live-server-amd64.iso** (ca. **2,9 GB**).
+Stand 26.09.2026: neueste Version = **Ubuntu 26.04.1 LTS**, Datei **ubuntu-26.04.1-desktop-amd64.iso** (ca. **6,5 GB**).
+
+> 💻 Ubuntu nennt als Mindestanforderung u. a. **6 GB Arbeitsspeicher** und **25 GB freien Festplattenplatz**. RAM prüfen in Windows: **Start** → **Einstellungen** → **System** → **Info** → **Installierter RAM**.
 
 ---
 
@@ -14,24 +16,25 @@ Stand 26.09.2026: neueste Version = **Ubuntu 26.04.1 LTS**, Datei **ubuntu-26.04
 
 ### Schritt 1 – Download-Seite öffnen
 
-👉 In Firefox öffnen: **https://ubuntu.com/download/server**
+👉 In Firefox öffnen: **https://ubuntu.com/download/desktop**
 
-![Ubuntu Server Download-Seite](bilder/ubuntu-1-download-button.png)
+![Ubuntu Desktop Download-Seite](bilder/ubuntu-1-download-button.png)
 
 1. Hier steht die aktuelle Version (**Ubuntu 26.04.1 LTS**).
-2. 👉 Neben **Intel or AMD 64-bit architecture** auf den grünen Knopf **Download** klicken.
+2. 👉 Neben **Intel or AMD 64-bit architecture** auf den grünen Knopf **Download** klicken (**5.9GB**).
+   ❌ **Nicht** den Knopf bei **ARM 64-bit architecture** – der ist für andere Geräte.
 
 > ℹ️ Unten erscheint evtl. ein Cookie-Fenster (**Your tracker settings**). Einfach eine Auswahl treffen – egal welche.
 
 ⏳ Eine Dankeschön-Seite erscheint, der Download startet von selbst. Das dauert je nach Internet einige Minuten.
 
-**Alternative:** Die offizielle Release-Seite **https://releases.ubuntu.com/26.04.1/** → **64-bit PC (AMD64) server install image**:
+**Alternative:** Die offizielle Release-Seite **https://releases.ubuntu.com/26.04.1/** → **64-bit PC (AMD64) desktop image**:
 
-![Ubuntu Release-Seite](bilder/ubuntu-2-releases-server-link.png)
+![Ubuntu Release-Seite](bilder/ubuntu-2-releases-desktop-link.png)
 
 ### Schritt 2 – Download prüfen
 
-👉 Im Ordner **Downloads** muss liegen: **ubuntu-26.04.1-live-server-amd64.iso** (ca. 2,9 GB)
+👉 Im Ordner **Downloads** muss liegen: **ubuntu-26.04.1-desktop-amd64.iso** (ca. 6,5 GB)
 
 <details>
 <summary>🔍 Optional: Echtheit prüfen (für Fortgeschrittene)</summary>
@@ -39,11 +42,11 @@ Stand 26.09.2026: neueste Version = **Ubuntu 26.04.1 LTS**, Datei **ubuntu-26.04
 1. Im Ordner **Downloads**: **Shift** gedrückt halten + Rechtsklick auf leere Fläche → **PowerShell-Fenster hier öffnen**.
 2. Eintippen und **Enter**:
    ```
-   Get-FileHash .\ubuntu-26.04.1-live-server-amd64.iso
+   Get-FileHash .\ubuntu-26.04.1-desktop-amd64.iso
    ```
 3. Die angezeigte Zahlen-/Buchstabenkette muss **genau** so lauten:
    ```
-   CC8A95CDE20F6CED61A322420DE00F10CC3C90CED545DAA46CB9C1A117F1D927
+   601E30FBF5D97759367C632E2C33630665039B7E2158FD068403DA3CCF1BDA1F
    ```
    (Quelle: https://releases.ubuntu.com/26.04.1/SHA256SUMS)
 </details>
@@ -64,11 +67,11 @@ Stand 26.09.2026: neueste Version = **Ubuntu 26.04.1 LTS**, Datei **ubuntu-26.04
 
 ![Flash from file](bilder/etcher-1-flash-from-file.png)
 
-👉 Im Fenster **Downloads** öffnen → **ubuntu-26.04.1-live-server-amd64.iso** anklicken → **Öffnen**.
+👉 Im Fenster **Downloads** öffnen → **ubuntu-26.04.1-desktop-amd64.iso** anklicken → **Öffnen**.
 
 ### Schritt 5 – Stick als Ziel wählen
 
-Links steht jetzt der Name der ISO und **2.93 GB**.
+Links steht jetzt der Name der ISO und **6.48 GB**.
 👉 **Select target** klicken.
 
 ![ISO gewählt, Select target klicken](bilder/etcher-2-select-target.png)

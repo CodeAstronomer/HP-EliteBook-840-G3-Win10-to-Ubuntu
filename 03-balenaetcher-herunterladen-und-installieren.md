@@ -59,4 +59,4 @@ Unten steht ein Hinweis zu anonymen Nutzungsdaten.
 | Firefox fragt, was mit der Datei passieren soll | 👉 **Datei speichern** wählen. |
 | Download bricht ab | Schritt 1 wiederholen. |
 
-➡️ Weiter mit [4 · Ubuntu ISO herunterladen und auf Stick schreiben](04-ubuntu-server-iso-herunterladen-und-auf-usb-stick-schreiben.md)
+➡️ Weiter mit [4 · Ubuntu ISO herunterladen und auf Stick schreiben](04-ubuntu-desktop-iso-herunterladen-und-auf-usb-stick-schreiben.md)

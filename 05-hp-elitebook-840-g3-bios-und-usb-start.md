@@ -1,8 +1,8 @@
-# 5 · HP EliteBook 840 G3: BIOS einstellen und vom USB-Stick starten
+# 5 · HP EliteBook 840 G3: BIOS einstellen, vom USB-Stick starten und Ubuntu installieren
 
-**Ziel:** Das BIOS so einstellen, dass der Laptop vom Stick **„UBUNTU“** startet, und den Ubuntu-Installer öffnen.
+**Ziel:** Das BIOS so einstellen, dass der Laptop vom Stick **„UBUNTU“** startet, und **Ubuntu Desktop** installieren.
 
-⏱️ ca. 15 Minuten · 🟧 Stick **„UBUNTU“** (aus Anleitung 4) · 🔌 **Netzteil anschließen**
+⏱️ ca. 1 Stunde · 🟧 Stick **„UBUNTU“** (aus Anleitung 4) · 🔌 **Netzteil anschließen**
 
 > ⚠️ Vorher erledigt? [1 · Ordner sichern](01-persoenliche-ordner-auf-usb-stick-sichern.md) und [2 · Firefox exportieren](02-firefox-lesezeichen-und-passwoerter-exportieren.md)
 
@@ -93,33 +93,111 @@ Ein schwarz-weißes Menü erscheint:
 
 ![GRUB-Menü vom Ubuntu-Stick](bilder/ubuntu-3-grub-menue.png)
 
-👉 **Try or Install Ubuntu Server** ist markiert → **Enter** drücken.
+👉 **Try or Install Ubuntu** ist markiert → **Enter** drücken.
 (Ohne Tastendruck startet es nach 30 Sekunden automatisch.)
 
-> 💡 Der Eintrag **UEFI Firmware Settings** führt direkt ins BIOS.
+> 💡 Bild bleibt schwarz oder verzerrt? → Neu starten und **Ubuntu (safe graphics)** wählen.
+> 💡 **UEFI Firmware Settings** führt direkt ins BIOS.
 
-⏳ Jetzt laufen **viele Textzeilen** über den Bildschirm. Das ist normal. **1–3 Minuten** warten.
+⏳ Das Ubuntu-Logo erscheint. **Einige Minuten** warten, bis das Fenster **Welcome to Ubuntu** kommt.
 
-### Schritt 10 – Installer: Sprache wählen
+---
 
-![Sprachauswahl im Ubuntu-Installer](bilder/ubuntu-4-installer-sprache.png)
+## Teil C – Ubuntu installieren
 
-1. ⌨️ **Pfeil ↑** bis **Deutsch** grün markiert ist.
-2. ⌨️ **Enter**.
+Der Installer wird mit der **Maus/Touchpad** bedient. Unten rechts immer **Weiter** (vorher **Next**).
 
-> Der Installer wird **nur mit der Tastatur** bedient: **Pfeiltasten**, **Tab**, **Enter**.
+### Schritt 10 – Sprache
 
-### Schritt 11 – Tastatur
+![Sprache wählen](bilder/ubuntu-4-installer-sprache.png)
 
-![Tastatur-Konfiguration](bilder/ubuntu-5-installer-tastatur.png)
+1. 👉 **Deutsch** anklicken – das Fenster wird sofort deutsch.
+2. 👉 **Weiter**.
 
-**Belegung: German** ist schon eingestellt.
-👉 Mit **Pfeil ↓** / **Tab** auf **Erledigt** → **Enter**.
+### Schritt 11 – Barrierefreiheit
 
-✅ **Der Ubuntu-Installer läuft!** Ab hier den Anweisungen auf dem Bildschirm folgen.
-Offizielle Anleitung (englisch): https://ubuntu.com/server/docs/tutorial/basic-installation/
+![Barrierefreiheit](bilder/ubuntu-5-installer-barrierefreiheit.png)
 
-> 🔴 Bei der Frage nach der **Festplatte** („Storage“) wird ausgewählt, was **gelöscht** wird. Nur weitermachen, wenn die Sicherung auf dem Stick **„DATEN“** kontrolliert ist!
+👉 Nichts ändern → **Weiter**.
+
+### Schritt 12 – Tastatur
+
+![Tastaturbelegung](bilder/ubuntu-6-installer-tastatur.png)
+
+✅ **Deutsch** ist angehakt, **Tastaturvariante: Deutsch** → **Weiter**.
+
+### Schritt 13 – Internet
+
+![Netzwerk](bilder/ubuntu-7-installer-netzwerk.png)
+
+👉 **WLAN** auswählen, WLAN-Name anklicken und WLAN-Passwort eingeben → **Weiter**.
+
+> ℹ️ Im Bild steht „Keine WLAN-Geräte erkannt“, weil es in einer virtuellen Maschine aufgenommen wurde. Auf dem Laptop stehen hier die WLAN-Netze. Ein LAN-Kabel geht auch (**Kabelgebundene Verbindung verwenden**).
+
+### Schritt 14 – Installieren oder ausprobieren
+
+![Ubuntu installieren](bilder/ubuntu-8-installer-installieren.png)
+
+👉 **Ubuntu installieren** → **Weiter**.
+
+> 💡 **Ubuntu ausprobieren** startet Ubuntu nur vom Stick (Live-System), **ohne** etwas am Laptop zu ändern – gut zum Testen, ob WLAN, Ton usw. funktionieren.
+
+### Schritt 15 – Art der Installation
+
+![Interaktive Installation](bilder/ubuntu-9-installer-art.png)
+
+👉 **Interaktive Installation** → **Weiter**.
+
+### Schritt 16 – Anwendungen
+
+![Anwendungen](bilder/ubuntu-10-installer-anwendungen.png)
+
+👉 **Standard-Installation** → **Weiter**.
+(**Vollständige Installation** = zusätzlich Office-Programme, Spiele usw.)
+
+### Schritt 17 – Zusatz-Software (optional)
+
+![Proprietäre Software](bilder/ubuntu-11-installer-proprietaer.png)
+
+Wer z. B. **MP3/MP4** abspielen möchte: zweiten Haken setzen. Unsicher? Beide Haken setzen schadet nicht. → **Weiter**.
+
+### Schritt 18 – 🔴 Festplatte
+
+![Festplatte löschen](bilder/ubuntu-12-installer-festplatte.png)
+
+👉 **Festplatte löschen und Ubuntu installieren** → **Weiter**.
+
+> 🔴 **Das löscht Windows und alle Dateien auf dem Laptop!** Nur weitermachen, wenn die Sicherung auf dem Stick **„DATEN“** kontrolliert ist ([Anleitung 1](01-persoenliche-ordner-auf-usb-stick-sichern.md), [Anleitung 2](02-firefox-lesezeichen-und-passwoerter-exportieren.md)).
+> ℹ️ Das Bild stammt aus einer virtuellen Maschine mit leerer Festplatte. Auf dem Laptop mit Windows können hier **weitere Auswahlmöglichkeiten** stehen. Für „nur Ubuntu“ trotzdem **Festplatte löschen und Ubuntu installieren** wählen.
+
+### Schritt 19 – Verschlüsselung
+
+![Verschlüsselung](bilder/ubuntu-13-installer-verschluesselung.png)
+
+👉 **Keine Verschlüsselung** → **Weiter**.
+(Wer den Laptop unterwegs nutzt, kann **Mit einer Passphrase verschlüsseln** wählen – dann muss bei **jedem Einschalten** diese Passphrase eingegeben werden. **Nicht vergessen!**)
+
+### Schritt 20 – Benutzerkonto
+
+![Konto einrichten](bilder/ubuntu-14-installer-konto.png)
+
+1. **Ihr Name** eintippen – Computername und Benutzername werden automatisch vorgeschlagen.
+2. **Passwort** zweimal eingeben. ✍️ **Aufschreiben!**
+3. 👉 **Weiter**.
+
+### Schritt 21 – Zeitzone
+
+![Zeitzone](bilder/ubuntu-15-installer-zeitzone.png)
+
+Bei **Standort** z. B. `Berlin` eintippen, sodass bei **Zeitzone** **Europe/Berlin** steht → **Weiter**.
+
+### Schritt 22 – Installation starten und warten
+
+1. Der Installer zeigt eine **Zusammenfassung**. Kurz prüfen, dann die Installation starten.
+2. ⏳ Die Installation dauert je nach Laptop ca. 10–30 Minuten. **Netzteil dranlassen.**
+3. Am Ende: **Neu starten** wählen. Wenn der Laptop dazu auffordert: **Stick abziehen** und **Enter** drücken.
+
+✅ **Fertig!** Ubuntu startet und fragt nach dem Passwort aus Schritt 20.
 
 ---
 
@@ -130,8 +208,9 @@ Offizielle Anleitung (englisch): https://ubuntu.com/server/docs/tutorial/basic-i
 | Kein **USB**-Eintrag bei **F9** | Stick in anderen USB-Anschluss stecken. In **Schritt 3** prüfen: **USB Storage Boot** angehakt? |
 | Stick startet nicht / Fehlermeldung zu Secure Boot | **Schritt 4**: **Legacy Support Disable and Secure Boot Disable** wählen, speichern, **Schritt 6** Code eingeben. |
 | Windows startet einfach | **F9** früher und öfter drücken. |
-| Bildschirm bleibt lange schwarz | Bis zu 3 Minuten warten. Dann Stick in Anleitung 4 neu beschreiben. |
+| Bild schwarz oder verzerrt nach GRUB | Neu starten, in **Schritt 9** **Ubuntu (safe graphics)** wählen. |
+| Nach der Installation startet wieder der Installer | Stick wurde nicht abgezogen. Abziehen, neu starten. |
 
 ---
 
-**Bilder:** Die GRUB- und Installer-Bilder sind echte Screenshots des Sticks **ubuntu-26.04.1-live-server-amd64.iso**, aufgenommen in einer virtuellen Maschine. Auf dem Laptop sehen die Texte gleich aus, nur Größe/Auflösung kann anders sein.
+**Bilder:** Startmenü und Installer sind echte Screenshots von **ubuntu-26.04.1-desktop-amd64.iso**, aufgenommen in einer virtuellen Maschine. Auf dem Laptop sind Texte und Knöpfe gleich; Größe, Hintergrund und die WLAN-/Festplatten-Einträge können anders aussehen.
