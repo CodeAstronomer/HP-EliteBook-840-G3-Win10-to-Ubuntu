@@ -23,7 +23,7 @@ Anleitungen Schritt für Schritt, für alle mit Grundkenntnissen in Windows 10.
 | 4 | [Ubuntu Server ISO herunterladen und auf USB-Stick schreiben](04-ubuntu-server-iso-herunterladen-und-auf-usb-stick-schreiben.md) |
 | 5 | [HP EliteBook 840 G3: BIOS einstellen und vom USB-Stick starten](05-hp-elitebook-840-g3-bios-und-usb-start.md) |
 
-> ℹ️ **Ubuntu Server** hat laut Ubuntu **keine grafische Oberfläche** (kein Desktop, kein Firefox mit Fenstern). Für einen normalen Arbeits-Laptop gibt es das **Desktop-Image** – die Schritte 3–5 funktionieren damit genauso.
+> ℹ️ **Ubuntu Server** hat laut Ubuntu **keine grafische Oberfläche** (kein Desktop, kein Firefox mit Fenstern). Für einen normalen Arbeits-Laptop gibt es das **Desktop-Image** – Anleitungen 3, 4 und Teil A von 5 funktionieren damit genauso; nur Startmenü und Installer sehen dann anders aus.
 
 > 💡 Schritte 1 und 2 **zuerst** erledigen. Bei der Ubuntu-Installation wird Windows mit allen Dateien gelöscht.
 
